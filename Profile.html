@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ansil Muhammed N S</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+
+    /* ---- Reset & Base ---- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* ---- Navigation Bar ---- */
+    nav {
+      background-color: #1a1a2e;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav .logo {
+      color: #e94560;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #e94560;
+    }
+
+    /* ---- Hero Section ---- */
+    .hero {
+      background-color: #16213e;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: #e94560;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #aaa;
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
+
+    .hero a {
+      background-color: #e94560;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .hero a:hover {
+      background-color: #c73652;
+    }
+
+    /* ---- Section Shared Styles ---- */
+    section {
+      padding: 60px 80px;
+    }
+
+    section h2 {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #1a1a2e;
+    }
+
+    .underline {
+      width: 60px;
+      height: 4px;
+      background-color: #e94560;
+      border-radius: 2px;
+      margin-bottom: 35px;
+    }
+
+    /* ---- About Section ---- */
+    #about {
+      background-color: white;
+    }
+
+    #about p {
+      font-size: 16px;
+      line-height: 1.9;
+      color: #555;
+      max-width: 750px;
+      margin-bottom: 15px;
+    }
+
+    /* ---- Details Table inside About ---- */
+    .about-details {
+      margin-top: 25px;
+      width: 100%;
+      max-width: 600px;
+      border-collapse: collapse;
+    }
+
+    .about-details tr {
+      border-bottom: 1px solid #eee;
+    }
+
+    .about-details td {
+      padding: 12px 10px;
+      font-size: 15px;
+      color: #555;
+    }
+
+    .about-details td:first-child {
+      font-weight: 600;
+      color: #1a1a2e;
+      width: 160px;
+    }
+
+    /* ---- Skills Section ---- */
+    #skills {
+      background-color: #f4f4f4;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .skill-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 25px 20px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .skill-card i {
+      font-size: 28px;
+      color: #e94560;
+      margin-bottom: 12px;
+    }
+
+    .skill-card p {
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    /* ---- Contact Section ---- */
+    #contact {
+      background-color: white;
+    }
+
+    #contact p.intro {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .contact-list {
+      list-style: none;
+    }
+
+    .contact-list li {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 15px;
+      color: #444;
+    }
+
+    .contact-list li i {
+      font-size: 18px;
+      color: #e94560;
+      width: 24px;
+      text-align: center;
+    }
+
+    .contact-list li a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    .contact-list li a:hover {
+      color: #e94560;
+    }
+
+    /* ---- Footer ---- */
+    footer {
+      background-color: #1a1a2e;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#" class="logo">Ansil.</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Hi, I'm <span>Ansil Muhammed N S</span></h1>
+    <p>CSE Student &nbsp;|&nbsp; Web Developer &nbsp;|&nbsp; KMEA Engineering College</p>
+    <a href="#about">Know More</a>
+  </div>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="underline"></div>
+    <p>
+      I am a B.Tech Computer Science and Engineering student at KMEA Engineering College,
+      affiliated with APJ Abdul Kalam Technological University (KTU), Kerala.
+    </p>
+    <p>
+      I am interested in web development and software development. I enjoy building
+      websites and learning new things in the field of computer science every day.
+    </p>
+    <table class="about-details">
+      <tr>
+        <td>College</td>
+        <td>KMEA Engineering College</td>
+      </tr>
+      <tr>
+        <td>Degree</td>
+        <td>B.Tech</td>
+      </tr>
+      <tr>
+        <td>Branch</td>
+        <td>Computer Science & Engineering</td>
+      </tr>
+      <tr>
+        <td>University</td>
+        <td>KTU, Kerala</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="underline"></div>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <i class="fa-solid fa-code"></i>
+        <p>Web Development</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-html5"></i>
+        <p>HTML & CSS</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-js"></i>
+        <p>JavaScript</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-terminal"></i>
+        <p>Software Dev</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-github"></i>
+        <p>Git & GitHub</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-lightbulb"></i>
+        <p>Problem Solving</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="underline"></div>
+    <p class="intro">Feel free to reach out to me through any of the channels below.</p>
+    <ul class="contact-list">
+      <li>
+        <i class="fa-solid fa-phone"></i>
+        <span>Office: 1234567890</span>
+      </li>
+      <li>
+        <i class="fa-solid fa-user"></i>
+        <span>Head Master: 9605213345</span>
+      </li>
+      <li>
+        <i class="fa-brands fa-youtube"></i>
+        <a href="https://www.youtube.com/" target="_blank">YouTube Channel</a>
+      </li>
+      <li>
+        <i class="fa-brands fa-facebook"></i>
+        <a href="https://www.facebook.com/" target="_blank">Facebook Profile</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ansil Muhammed N S &nbsp;|&nbsp; KMEA Engineering College</p>
+  </footer>
+
+</body>
+</html>
